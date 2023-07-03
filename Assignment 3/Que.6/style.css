@@ -1,0 +1,256 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    max-width: 100vw;
+    overflow-x: hidden;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+header {
+    height: 8vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 8rem;
+    background-color: #1b1b1b;
+}
+
+.logo>p {
+    font-size: 1.5rem;
+    font-weight: 800;
+    line-height: 1.5rem;
+    color: #1892F7;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.login-btn {
+    background-color: #1893F7;
+    color: #fff;
+    padding: 0.2rem 2rem;
+    border-radius: 5px;
+}
+
+.hamburger {
+    display: none;
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* border: 1px solid black; */
+    max-height: fit-content;
+    margin: 2rem 7rem 2rem 12rem;
+
+}
+
+.left-main-section {
+    max-width: 30rem;
+}
+
+.head-main-section {
+    line-height: 3.5rem;
+}
+
+.head-main-section p:first-child {
+    font-size: 2rem;
+    letter-spacing: -1.5px;
+    font-weight: 500;
+}
+
+.head-main-section p:last-child {
+    color: #1893F7;
+    letter-spacing: -2px;
+    font-size: 4rem;
+    font-weight: 500;
+}
+
+.brand-container>p {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #1892F7;
+    margin: 2rem 0 1rem 0;
+}
+
+.brand-container>img {
+    width: 23rem;
+}
+
+.description {
+    margin: 1.2rem 0 1.4rem 0;
+    font-weight: 300;
+    font-size: 1.1rem;
+}
+
+.apply-now-btn button {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 15.5rem;
+    padding: 0.45rem;
+    border-radius: 5px;
+    border: none;
+    background-color: #1893F7;
+    color: #fff;
+    cursor: pointer;
+}
+
+.apply-now-btn button p {
+    font-size: 0.95rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin-right: 0.9rem;
+}
+
+.apply-now-btn button i {
+    font-size: 1.2rem;
+}
+
+.right-main-section>video {
+    width: 32rem;
+}
+
+@media (max-width:992px) {
+    header {
+        padding: 0 3rem;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .cross {
+        display: none;
+    }
+}
+
+@media (min-width:768px)and (max-width:992px) {
+
+    .left-main-section {
+        width: 30rem;
+    }
+
+
+
+    .head-main-section>p:first-child {
+        font-size: 1.8rem;
+    }
+
+    .head-main-section>p:last-child {
+        font-size: 3.5rem;
+    }
+
+    .brand-container>img {
+        width: 17rem;
+    }
+
+    .right-main-section>video {
+        width: 28rem;
+    }
+
+}
+
+@media (min-width:576px)and (max-width:768px) {
+    main {
+        flex-direction: column;
+    }
+
+    .left-main-section {
+        width: 30rem;
+    }
+
+    .right-main-section>video {
+        width: 28rem;
+    }
+
+    .head-main-section>p:first-child {
+        font-size: 1.8rem;
+    }
+
+    .head-main-section>p:last-child {
+        font-size: 3.5rem;
+    }
+
+    .brand-container>img {
+        width: 17rem;
+    }
+}
+
+@media (max-width:576px) {
+    main {
+        flex-direction: column;
+        margin: 0.5rem 1rem 2rem 2rem;
+    }
+
+    .left-main-section {
+        max-width: 30rem;
+    }
+
+    .head-main-section>p:first-child {
+        font-size: 1.5rem;
+    }
+
+    .head-main-section>p:last-child {
+        font-size: 3.1rem;
+    }
+
+    .brand-container>p {
+        margin: 1.5rem 0 0.5rem 0;
+    }
+
+    .brand-container>img {
+        width: 17rem;
+    }
+
+    .description {
+        font-size: 0.9rem;
+    }
+
+    .apply-now-btn button {
+        width: 11.5rem;
+        padding: 0.4rem;
+    }
+
+    .apply-now-btn button p {
+        font-size: 0.8rem;
+    }
+
+    .apply-now-btn button i {
+        font-size: 1rem;
+    }
+
+    .right-main-section>video {
+        width: 20rem;
+    }
+
+
+}
